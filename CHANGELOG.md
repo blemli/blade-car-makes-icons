@@ -8,4 +8,5 @@ This changelog follows [the Keep a Changelog standard](https://keepachangelog.co
 
 ## 1.0.0 (2025-03-22)
 
-Initial release.
+* Initial release.
+* Extend support for PHP 8.0 or higher and Laravel 9.0 or higher

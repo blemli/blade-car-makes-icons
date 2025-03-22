@@ -11,7 +11,7 @@ use PHPUnit\Framework\Attributes\Test;
 
 class CompilesIconsTest extends TestCase
 {
-    #[Test]
+    /** @test */
     public function it_compiles_a_single_anonymous_component()
     {
         $result = svg('carmakes-mitsubishi')->toHtml();
@@ -24,7 +24,7 @@ class CompilesIconsTest extends TestCase
         $this->assertSame($expected, $result);
     }
 
-    #[Test]
+    /** @test */
     public function it_can_add_classes_to_icons()
     {
         $result = svg('carmakes-mitsubishi', 'w-6 h-6 text-gray-500')->toHtml();
@@ -36,7 +36,7 @@ class CompilesIconsTest extends TestCase
         $this->assertSame($expected, $result);
     }
 
-    #[Test]
+    /** @test */
     public function it_can_add_styles_to_icons()
     {
         $result = svg('carmakes-mitsubishi', ['style' => 'color: #555'])->toHtml();
