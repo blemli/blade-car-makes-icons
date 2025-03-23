@@ -10,8 +10,6 @@
     <img src="https://img.shields.io/packagist/dt/johan-boshoff/blade-car-makes-icons" alt="Total Downloads">
 </a>
 
-> Then, make sure [the implementation](./src) is correct, that you set up [icon generation](https://github.com/blade-ui-kit/blade-icons#generating-icons) and that [your tests](./tests) pass. And remove this quote block from your readme. When you've published your package on Packagist, make sure to send it in to [the Blade Icons package list](https://github.com/blade-ui-kit/blade-icons#icon-packages).
-
 A package to easily make use of [car-makes-icons](https://github.com/dangnelson/car-makes-icons) SVG icons in your Laravel Blade views.
 
 The original [car-makes-icons](https://github.com/dangnelson/car-makes-icons) is a set of icons consisting logos of car makes to match the Edmunds API. The icons are designed and maintained by [Dan G Nelson](https://github.com/dangnelson).
