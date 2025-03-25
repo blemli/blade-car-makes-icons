@@ -2,7 +2,6 @@
 
 use Codeat3\BladeIconGeneration\IconProcessor;
 
-
 $svgNormalization = static function (string $tempFilepath, array $iconSet) {
 
     // perform generic optimizations
