@@ -2,12 +2,19 @@
 
 use Codeat3\BladeIconGeneration\IconProcessor;
 
+
 $svgNormalization = static function (string $tempFilepath, array $iconSet) {
 
     // perform generic optimizations
     $iconProcessor = new IconProcessor($tempFilepath, $iconSet);
     $iconProcessor
-        ->optimize()
+        ->optimize(function (DOMElement $element) {
+            // Remove all child style elements
+            $styles = $element->getElementsByTagName('style');
+            foreach ($styles as $style) {
+                $style->parentNode->removeChild($style);
+            }
+        })
         ->postOptimizationAsString(function ($svgLine) {})
         ->save(filenameCallable: function ($filename) {
             return str_replace(' ', '-', $filename);
