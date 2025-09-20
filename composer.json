@@ -1,5 +1,5 @@
 {
-    "name": "johan-boshoff/blade-car-makes-icons",
+    "name": "blemli/blade-car-makes-icons",
     "description": "A package to easily make use of car-makes-icons in your Laravel Blade views.",
     "keywords": ["Blade", "Icons", "Laravel", "Car", "Vehicle", "Makes", "Manufacturers", "Logos", "Laravel"],
     "homepage": "https://github.com/johan-boshoff/blade-car-makes-icons",
